@@ -1,11 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 using System.Windows.Forms;
 
 namespace Autostart_Manager
@@ -17,12 +14,11 @@ namespace Autostart_Manager
             InitializeComponent();
             InitilizeListView();
             ResizeColumns();
-            // LoadList();
+            LoadListViewItems();
 
             StartItem si = new StartItem();
             si.Name = "Test";
             si.Path = "C:/sdasad/sad.exe";
-
             AddItem(si);
         }
 
@@ -51,6 +47,14 @@ namespace Autostart_Manager
             listViewMain.Columns.Add("Status");
 
             listViewMain.SmallImageList = new ImageList();
+        }
+
+        public void LoadListViewItems()
+        {
+            foreach (StartItem item in Helper.StartItemList)
+            {
+                AddItem(item);
+            }
         }
 
         public void UpdateListView()
@@ -96,17 +100,12 @@ namespace Autostart_Manager
             }
         }
 
-        public void LoadList()
-        {
-            // Properties.Settings.Default.ProgramList
-        }
-
         public void SaveList()
         {
-            throw new NotImplementedException();
+            Helper.SaveStartItemList(Helper.StartItemList);
         }
 
-        private const int StatusWidht = 100;
+        private const int StatusWidht = 65;
 
         public void ResizeColumns()
         {
@@ -128,6 +127,11 @@ namespace Autostart_Manager
         private void buttonShortcuts_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Not Implemented");
+        }
+
+        private void Main_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            SaveList();
         }
     }
 }

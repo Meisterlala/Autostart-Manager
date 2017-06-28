@@ -73,6 +73,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.listViewMain.FullRowSelect = true;
             this.listViewMain.GridLines = true;
+            this.listViewMain.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
             this.listViewMain.Location = new System.Drawing.Point(12, 12);
             this.listViewMain.Name = "listViewMain";
             this.listViewMain.ShowItemToolTips = true;
@@ -118,6 +119,7 @@
             this.MinimumSize = new System.Drawing.Size(367, 202);
             this.Name = "Main";
             this.Text = "Main";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Main_FormClosed);
             this.SizeChanged += new System.EventHandler(this.Main_SizeChanged);
             this.ResumeLayout(false);
 

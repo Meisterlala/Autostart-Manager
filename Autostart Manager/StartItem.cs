@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace Autostart_Manager
 {
+    [Serializable]
     public class StartItem
     {
         public string Name { get; set; }
@@ -25,6 +26,8 @@ namespace Autostart_Manager
             Commandline = "";
             CurrentStatus = Status.stopped;
             DisplayedImage = Properties.Resources.DefaultImage;
+
+            Helper.StartItemList.Add(this);
         }
     }
 }
