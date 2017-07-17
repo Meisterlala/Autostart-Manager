@@ -16,10 +16,10 @@ namespace Autostart_Manager
             ResizeColumns();
             LoadListViewItems();
 
-            StartItem si = new StartItem();
-            si.Name = "Test";
-            si.Path = "C:/sdasad/sad.exe";
-            AddItem(si);
+            // StartItem si = new StartItem();
+            // si.Name = "Test";
+            //  si.Path = "C:/sdasad/sad.exe";
+            //  AddItem(si);
         }
 
         public void AddItem(StartItem si)
@@ -111,7 +111,7 @@ namespace Autostart_Manager
         {
             listViewMain.Columns[1].Width = StatusWidht;
             var remainder = listViewMain.Width - StatusWidht - 5;
-            listViewMain.Columns[0].Width = remainder;
+            listViewMain.Columns[0].Width = remainder - 18;
         }
 
         private void Main_SizeChanged(object sender, EventArgs e)
@@ -121,7 +121,9 @@ namespace Autostart_Manager
 
         private void buttonAbout_Click(object sender, EventArgs e)
         {
-            new About().ShowDialog();
+            this.BackColor = Color.FromArgb(180, 155, 255);
+
+            //new About().ShowDialog();
         }
 
         private void buttonShortcuts_Click(object sender, EventArgs e)
