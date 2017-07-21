@@ -48,7 +48,7 @@
             this.buttonNew.Name = "buttonNew";
             this.buttonNew.Size = new System.Drawing.Size(75, 23);
             this.buttonNew.TabIndex = 3;
-            this.buttonNew.Text = Autostart_Manager.Properties.Resources.Main_InitializeComponent_New;
+            this.buttonNew.Text = global::Autostart_Manager.Properties.Resources.Main_InitializeComponent_New;
             this.buttonNew.UseVisualStyleBackColor = true;
             this.buttonNew.Click += new System.EventHandler(this.ButtonNew_Click);
             // 
@@ -59,7 +59,7 @@
             this.buttonEdit.Name = "buttonEdit";
             this.buttonEdit.Size = new System.Drawing.Size(75, 23);
             this.buttonEdit.TabIndex = 4;
-            this.buttonEdit.Text = Autostart_Manager.Properties.Resources.Edit_InitializeComponent_Edit;
+            this.buttonEdit.Text = global::Autostart_Manager.Properties.Resources.Edit_InitializeComponent_Edit;
             this.buttonEdit.UseVisualStyleBackColor = true;
             this.buttonEdit.Click += new System.EventHandler(this.ButtonEdit_Click);
             // 
@@ -70,7 +70,7 @@
             this.buttonDelete.Name = "buttonDelete";
             this.buttonDelete.Size = new System.Drawing.Size(75, 23);
             this.buttonDelete.TabIndex = 5;
-            this.buttonDelete.Text = Autostart_Manager.Properties.Resources.Main_InitializeComponent_Delete;
+            this.buttonDelete.Text = global::Autostart_Manager.Properties.Resources.Main_InitializeComponent_Delete;
             this.buttonDelete.UseVisualStyleBackColor = true;
             this.buttonDelete.Click += new System.EventHandler(this.ButtonDelete_Click);
             // 
@@ -98,7 +98,7 @@
             this.buttonAbout.Name = "buttonAbout";
             this.buttonAbout.Size = new System.Drawing.Size(75, 23);
             this.buttonAbout.TabIndex = 6;
-            this.buttonAbout.Text = Autostart_Manager.Properties.Resources.About_InitializeComponent_About;
+            this.buttonAbout.Text = global::Autostart_Manager.Properties.Resources.About_InitializeComponent_About;
             this.buttonAbout.UseVisualStyleBackColor = true;
             this.buttonAbout.Click += new System.EventHandler(this.ButtonAbout_Click);
             // 
@@ -109,7 +109,7 @@
             this.buttonStop.Name = "buttonStop";
             this.buttonStop.Size = new System.Drawing.Size(75, 23);
             this.buttonStop.TabIndex = 2;
-            this.buttonStop.Text = Autostart_Manager.Properties.Resources.Main_InitializeComponent_Stop;
+            this.buttonStop.Text = global::Autostart_Manager.Properties.Resources.Main_InitializeComponent_Stop;
             this.buttonStop.UseVisualStyleBackColor = true;
             this.buttonStop.Click += new System.EventHandler(this.ButtonStop_Click);
             // 
@@ -120,14 +120,14 @@
             this.buttonStart.Name = "buttonStart";
             this.buttonStart.Size = new System.Drawing.Size(75, 23);
             this.buttonStart.TabIndex = 1;
-            this.buttonStart.Text = Autostart_Manager.Properties.Resources.Main_InitializeComponent_Start;
+            this.buttonStart.Text = global::Autostart_Manager.Properties.Resources.Main_InitializeComponent_Start;
             this.buttonStart.UseVisualStyleBackColor = true;
             this.buttonStart.Click += new System.EventHandler(this.ButtonStart_Click);
             // 
             // notifyIconMain
             // 
             this.notifyIconMain.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIconMain.Icon")));
-            this.notifyIconMain.Text = Autostart_Manager.Properties.Resources.Main_InitializeComponent_AutostartManager;
+            this.notifyIconMain.Text = global::Autostart_Manager.Properties.Resources.Main_InitializeComponent_AutostartManager;
             this.notifyIconMain.Visible = true;
             this.notifyIconMain.MouseClick += new System.Windows.Forms.MouseEventHandler(this.NotifyIconMain_MouseClick);
             // 
@@ -144,11 +144,12 @@
             this.Controls.Add(this.buttonEdit);
             this.Controls.Add(this.buttonNew);
             this.DoubleBuffered = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(367, 243);
             this.Name = "Main";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = Autostart_Manager.Properties.Resources.Main_InitializeComponent_AutostartManager;
+            this.Text = "Autostart Manager";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Main_FormClosed);
             this.SizeChanged += new System.EventHandler(this.Main_SizeChanged);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Main_KeyDown);
