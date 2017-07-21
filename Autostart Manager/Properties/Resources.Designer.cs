@@ -61,12 +61,292 @@ namespace Autostart_Manager.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to About.
+        /// </summary>
+        internal static string About_InitializeComponent_About {
+            get {
+                return ResourceManager.GetString("About_InitializeComponent_About", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to -m Start Maximized.
+        /// </summary>
+        internal static string About_InitializeComponent_CommandlineArguments2 {
+            get {
+                return ResourceManager.GetString("About_InitializeComponent_CommandlineArguments2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string About_InitializeComponent_CommandlineArguments3 {
+            get {
+                return ResourceManager.GetString("About_InitializeComponent_CommandlineArguments3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string About_InitializeComponent_CommandlineArguments4 {
+            get {
+                return ResourceManager.GetString("About_InitializeComponent_CommandlineArguments4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string About_InitializeComponent_CommandlineArguments5 {
+            get {
+                return ResourceManager.GetString("About_InitializeComponent_CommandlineArguments5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string About_InitializeComponent_CommandlineArgumentsRNRNMStartMaximizedRNRN {
+            get {
+                return ResourceManager.GetString("About_InitializeComponent_CommandlineArgumentsRNRNMStartMaximizedRNRN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Commandline arguments:.
+        /// </summary>
+        internal static string About_InitializeComponent_CommandlineArgumentsTTTMStartMaximized {
+            get {
+                return ResourceManager.GetString("About_InitializeComponent_CommandlineArgumentsTTTMStartMaximized", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Developed by Robin Rottstädt 2017.
+        /// </summary>
+        internal static string About_InitializeComponent_Developed_by_Robin_Rottstädt_2017 {
+            get {
+                return ResourceManager.GetString("About_InitializeComponent_Developed_by_Robin_Rottstädt_2017", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap DefaultImage {
             get {
                 object obj = ResourceManager.GetObject("DefaultImage", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add new Item.
+        /// </summary>
+        internal static string Edit_Edit_AddNewItem {
+            get {
+                return ResourceManager.GetString("Edit_Edit_AddNewItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Edit: .
+        /// </summary>
+        internal static string Edit_Edit_Edit {
+            get {
+                return ResourceManager.GetString("Edit_Edit_Edit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add.
+        /// </summary>
+        internal static string Edit_InitializeComponent_Add {
+            get {
+                return ResourceManager.GetString("Edit_InitializeComponent_Add", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cancel.
+        /// </summary>
+        internal static string Edit_InitializeComponent_Cancel {
+            get {
+                return ResourceManager.GetString("Edit_InitializeComponent_Cancel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Choose.
+        /// </summary>
+        internal static string Edit_InitializeComponent_Choose {
+            get {
+                return ResourceManager.GetString("Edit_InitializeComponent_Choose", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Choose Executable.
+        /// </summary>
+        internal static string Edit_InitializeComponent_ChooseExecutable {
+            get {
+                return ResourceManager.GetString("Edit_InitializeComponent_ChooseExecutable", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Commandline.
+        /// </summary>
+        internal static string Edit_InitializeComponent_Commandline {
+            get {
+                return ResourceManager.GetString("Edit_InitializeComponent_Commandline", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Edit.
+        /// </summary>
+        internal static string Edit_InitializeComponent_Edit {
+            get {
+                return ResourceManager.GetString("Edit_InitializeComponent_Edit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Keep running.
+        /// </summary>
+        internal static string Edit_InitializeComponent_KeepRunning {
+            get {
+                return ResourceManager.GetString("Edit_InitializeComponent_KeepRunning", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Path.
+        /// </summary>
+        internal static string Edit_InitializeComponent_Path {
+            get {
+                return ResourceManager.GetString("Edit_InitializeComponent_Path", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Could not Find StartItem from GUID.
+        /// </summary>
+        internal static string Helper_StartItemFromGUID_CouldNotFindStartItemFromGUID {
+            get {
+                return ResourceManager.GetString("Helper_StartItemFromGUID_CouldNotFindStartItemFromGUID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please select one Item.
+        /// </summary>
+        internal static string Main_ButtonEdit_Click_PleaseSelectOneItem {
+            get {
+                return ResourceManager.GetString("Main_ButtonEdit_Click_PleaseSelectOneItem", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Autostart Manager.
+        /// </summary>
+        internal static string Main_InitializeComponent_AutostartManager {
+            get {
+                return ResourceManager.GetString("Main_InitializeComponent_AutostartManager", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Delete.
+        /// </summary>
+        internal static string Main_InitializeComponent_Delete {
+            get {
+                return ResourceManager.GetString("Main_InitializeComponent_Delete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to New.
+        /// </summary>
+        internal static string Main_InitializeComponent_New {
+            get {
+                return ResourceManager.GetString("Main_InitializeComponent_New", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Start.
+        /// </summary>
+        internal static string Main_InitializeComponent_Start {
+            get {
+                return ResourceManager.GetString("Main_InitializeComponent_Start", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Stop.
+        /// </summary>
+        internal static string Main_InitializeComponent_Stop {
+            get {
+                return ResourceManager.GetString("Main_InitializeComponent_Stop", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Name.
+        /// </summary>
+        internal static string Main_InitilizeListView_Name {
+            get {
+                return ResourceManager.GetString("Main_InitilizeListView_Name", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Status.
+        /// </summary>
+        internal static string Main_InitilizeListView_Status {
+            get {
+                return ResourceManager.GetString("Main_InitilizeListView_Status", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Running.
+        /// </summary>
+        internal static string Main_UpdateListView_Running {
+            get {
+                return ResourceManager.GetString("Main_UpdateListView_Running", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Stopped.
+        /// </summary>
+        internal static string Main_UpdateListView_Stopped {
+            get {
+                return ResourceManager.GetString("Main_UpdateListView_Stopped", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to  Slash:.
+        /// </summary>
+        internal static string Program_GetProcessFromStartItem_Slash {
+            get {
+                return ResourceManager.GetString("Program_GetProcessFromStartItem_Slash", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        internal static System.Drawing.Icon Start_icon {
+            get {
+                object obj = ResourceManager.GetObject("Start_icon", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
             }
         }
     }

@@ -1,18 +1,53 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.IO;
-using System.Linq;
 using System.Runtime.Serialization.Formatters.Binary;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Autostart_Manager
 {
     internal static class Helper
     {
+        #region Fields
+
         public static List<StartItem> StartItemList = new List<StartItem>();
 
-        static public void SaveStartItemList(List<StartItem> tuples)
+        #endregion Fields
+
+        #region Methods
+
+        public static Image GetImageFromPath(string path)
+        {
+            Image result;
+
+            try
+            {
+                var icon = Icon.ExtractAssociatedIcon(path);
+                result = icon.ToBitmap();
+            }
+            catch (Exception)
+            {
+                result = Properties.Resources.DefaultImage;
+            }
+
+            return result;
+        }
+
+        public static List<StartItem> LoadStartItemList()
+        {
+            if (Properties.Settings.Default.ProgramList == null || Properties.Settings.Default.ProgramList == "")
+            {
+                return new List<StartItem>();
+            }
+
+            using (MemoryStream ms = new MemoryStream(Convert.FromBase64String(Properties.Settings.Default.ProgramList)))
+            {
+                BinaryFormatter bf = new BinaryFormatter();
+                return (List<StartItem>)bf.Deserialize(ms);
+            }
+        }
+
+        public static void SaveStartItemList(List<StartItem> tuples)
         {
             using (MemoryStream ms = new MemoryStream())
             {
@@ -26,18 +61,33 @@ namespace Autostart_Manager
             }
         }
 
-        static public List<StartItem> LoadStartItemList()
+        public static StartItem StartItemFromGUID(StartItem passed)
         {
-            if (Properties.Settings.Default.ProgramList == null || Properties.Settings.Default.ProgramList == "")
+            foreach (StartItem si in StartItemList)
             {
-                return new List<StartItem>();
+                if (si.GUID == passed.GUID)
+                {
+                    return si;
+                }
             }
 
-            using (MemoryStream ms = new MemoryStream(Convert.FromBase64String(Properties.Settings.Default.ProgramList)))
+            throw new Exception(Autostart_Manager.Properties.Resources.Helper_StartItemFromGUID_CouldNotFindStartItemFromGUID);
+        }
+
+        public static void UpdateStartItemListStatus(List<StartItem> SIList)
+        {
+            foreach (StartItem newSI in SIList)
             {
-                BinaryFormatter bf = new BinaryFormatter();
-                return (List<StartItem>)bf.Deserialize(ms);
+                foreach (StartItem oldSI in StartItemList)
+                {
+                    if (newSI.GUID == oldSI.GUID)
+                    {
+                        oldSI.CurrentStatus = newSI.CurrentStatus;
+                    }
+                }
             }
         }
+
+        #endregion Methods
     }
 }

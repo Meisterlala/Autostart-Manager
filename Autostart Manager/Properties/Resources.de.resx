@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <root>
   <!-- 
     Microsoft ResX Schema 
@@ -117,13 +117,6 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="DefaultImage" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\DefaultImage.bmp;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Start_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Start-icon.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Main_InitilizeListView_Name" xml:space="preserve">
     <value>Name</value>
   </data>
@@ -131,87 +124,75 @@
     <value>Status</value>
   </data>
   <data name="About_InitializeComponent_Developed_by_Robin_Rottstädt_2017" xml:space="preserve">
-    <value>Developed by Robin Rottstädt 2017</value>
+    <value>Entwickelt von Robin Rottstädt 2017</value>
   </data>
-  <data name="About_InitializeComponent_CommandlineArgumentsRNRNMStartMaximizedRNRN" xml:space="preserve">
-    <value></value>
-  <comment>@Invariant</comment></data>
   <data name="About_InitializeComponent_About" xml:space="preserve">
-    <value>About</value>
+    <value>Über</value>
   </data>
   <data name="Edit_InitializeComponent_Commandline" xml:space="preserve">
-    <value>Commandline</value>
+    <value>Befehlszeile</value>
   </data>
   <data name="Edit_InitializeComponent_Path" xml:space="preserve">
-    <value>Path</value>
+    <value>Pfad</value>
   </data>
   <data name="Edit_InitializeComponent_Choose" xml:space="preserve">
-    <value>Choose</value>
+    <value>auswählen</value>
   </data>
   <data name="Edit_InitializeComponent_KeepRunning" xml:space="preserve">
-    <value>Keep running</value>
+    <value>laufen lassen</value>
   </data>
   <data name="Edit_InitializeComponent_Cancel" xml:space="preserve">
-    <value>Cancel</value>
+    <value>Abbrechen</value>
   </data>
   <data name="Edit_InitializeComponent_Add" xml:space="preserve">
-    <value>Add</value>
+    <value>Hinzufügen</value>
   </data>
   <data name="Edit_InitializeComponent_ChooseExecutable" xml:space="preserve">
-    <value>Choose Executable</value>
+    <value>Ausführbare Datei auswählen</value>
   </data>
   <data name="Edit_InitializeComponent_Edit" xml:space="preserve">
-    <value>Edit</value>
+    <value>Bearbeiten</value>
   </data>
   <data name="Edit_Edit_AddNewItem" xml:space="preserve">
-    <value>Add new Item</value>
+    <value>Neuen Eintrag hinzufügen</value>
   </data>
   <data name="Edit_Edit_Edit" xml:space="preserve">
-    <value>Edit: </value>
+    <value>Bearbeiten: </value>
   </data>
   <data name="Helper_StartItemFromGUID_CouldNotFindStartItemFromGUID" xml:space="preserve">
-    <value>Could not Find StartItem from GUID</value>
+    <value>StartItem wurde nicht durch die GUID gefunden</value>
   </data>
   <data name="Main_UpdateListView_Running" xml:space="preserve">
-    <value>Running</value>
+    <value>lauft</value>
   </data>
   <data name="Main_UpdateListView_Stopped" xml:space="preserve">
-    <value>Stopped</value>
+    <value>gestoppet</value>
   </data>
   <data name="Main_ButtonEdit_Click_PleaseSelectOneItem" xml:space="preserve">
-    <value>Please select one Item</value>
+    <value>Bitte einen Eintrag auswählen</value>
   </data>
   <data name="Main_InitializeComponent_New" xml:space="preserve">
-    <value>New</value>
+    <value>Neu</value>
   </data>
   <data name="Main_InitializeComponent_Delete" xml:space="preserve">
-    <value>Delete</value>
+    <value>Löschen</value>
   </data>
   <data name="Main_InitializeComponent_Stop" xml:space="preserve">
     <value>Stop</value>
   </data>
   <data name="Main_InitializeComponent_Start" xml:space="preserve">
-    <value>Start</value>
+    <value>Starten</value>
   </data>
   <data name="Main_InitializeComponent_AutostartManager" xml:space="preserve">
-    <value>Autostart Manager</value>
+    <value>Autostart Verwalter</value>
   </data>
   <data name="Program_GetProcessFromStartItem_Slash" xml:space="preserve">
     <value> Slash:</value>
   </data>
   <data name="About_InitializeComponent_CommandlineArgumentsTTTMStartMaximized" xml:space="preserve">
-    <value>Commandline arguments:</value>
+    <value>Befehlszeilen Argumente:</value>
   </data>
   <data name="About_InitializeComponent_CommandlineArguments2" xml:space="preserve">
-    <value>-m Start Maximized</value>
+    <value>-m Maximiert Starten</value>
   </data>
-  <data name="About_InitializeComponent_CommandlineArguments3" xml:space="preserve">
-    <value></value>
-  <comment>@Invariant</comment></data>
-  <data name="About_InitializeComponent_CommandlineArguments4" xml:space="preserve">
-    <value></value>
-  <comment>@Invariant</comment></data>
-  <data name="About_InitializeComponent_CommandlineArguments5" xml:space="preserve">
-    <value></value>
-  <comment>@Invariant</comment></data>
 </root>

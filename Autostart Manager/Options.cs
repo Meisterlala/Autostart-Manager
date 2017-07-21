@@ -1,15 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using CommandLine;
+﻿using CommandLine;
 
 namespace Autostart_Manager
 {
     internal class Options
     {
-        [Option('s', "silent", DefaultValue = false, HelpText = "Don't display the interface")]
-        public bool silent { get; set; }
+        #region Properties
+
+        [Option('m', "minimzed", DefaultValue = false, HelpText = "Start Minimized")]
+        public bool Minimzed { get; set; }
+
+        #endregion Properties
     }
 }
